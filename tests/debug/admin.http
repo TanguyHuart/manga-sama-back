@@ -1,0 +1,20 @@
+// Route d'administrateur pour éditer les privilèges 
+
+
+// Modifie les droits (rôle) d'un utilisateur par son ID .adminModifyOneUserById
+PUT  http://localhost:3000/admin/user/10 HTTP/1.1
+Content-Type: application/json
+
+{
+  "lastname": "Aminos",
+  "firstname": "Nodormir",
+  "pseudo": "jaimelesbonssteaks",
+  "birthdate": "1999-05-10",
+  "address": "",
+  "zip_code": "",
+  "city": "taboulistan",
+  "phone_number": "",
+  "email": "qsd@ilqdqsdfa.com",
+  "password": "houmouss",
+  "role_id" : 2
+}

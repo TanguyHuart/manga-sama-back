@@ -1,0 +1,52 @@
+// Récuéprer tous les utilisateurs .getAllUsers
+GET  http://localhost:3000/user HTTP/1.1
+
+###
+// Ajouter un utilisateur .createOneUser
+POST  http://localhost:3000/user HTTP/1.1
+Content-Type: application/json
+
+{
+  "pseudo": "test",
+  "email": "test@test.test",
+  "password": "Test123!",
+  "passwordConfirmation":"Test123!"
+  }
+  
+ // erreur sans les quotes alors que c'est du int
+
+###
+// Récupérer les infos d'un utilisateur par son ID .getOneUserById
+GET http://localhost:3000/user/9 HTTP/1.1
+
+###
+// Modifier les infos d'un utilisateur par son ID .modifyOneUserById
+PUT   http://localhost:3000/user/9 HTTP/1.1
+Content-Type: application/json
+
+{
+  "lastname": "jeanmichel",
+  "firstname": "codeur",
+  "pseudo": "sdfqsdqsd",
+  "birthdate": "",
+  "address": "",
+  "zip_code": "15155",
+  "city": "",
+  "phone_number": ""
+  }
+
+
+###
+
+// Modifier l'email d'un utilisateur par son ID .modifyOneUserEmailById
+PATCH    http://localhost:3000/user/6 HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "qslm51kqslmdj@lksd.com"
+  }
+
+
+###
+// Supprimer un utilisateur .removeOneUserById
+DELETE  http://localhost:3000/user/9 HTTP/1.1

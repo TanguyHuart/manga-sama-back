@@ -1,0 +1,12 @@
+###
+// Ajouter une transaction .addTransaction
+POST  http://localhost:3000/transaction HTTP/1.1
+Content-Type: application/json
+
+{
+  "buyerID": "1",
+  "sellerID": "9",
+  "articleID": "8"
+}
+
+// TODO! : prendre en charge le cas de vente d'une personne qui possède pas l'articl

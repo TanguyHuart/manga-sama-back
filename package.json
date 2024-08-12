@@ -1,0 +1,36 @@
+{
+  "name": "projet-4-manga-sama-back",
+  "version": "1.0.0",
+  "description": "Back-End du projet Manga-SaMA",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "bcrypt": "^5.1.1",
+    "cheerio": "1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "email-validator": "^2.0.4",
+    "express": "^4.18.2",
+    "fs": "0.0.1-security",
+    "joi": "^17.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "1.4.5-lts.1",
+    "nodejs": "^0.0.0",
+    "nodemailer": "^6.9.7",
+    "pg": "^8.11.3",
+    "sanitizer": "^0.1.3",
+    "sharp": "^0.33.0",
+    "stripe": "^14.8.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.54.0"
+  }
+}

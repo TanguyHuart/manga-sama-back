@@ -1,0 +1,18 @@
+
+// Récupéprer toutes les annonces en lien avec un manga particulier .getArticlesByManga
+GET  http://localhost:3000/associate/article/manga/9782344020685 HTTP/1.1
+
+### 
+
+// Associer un article avec un manga par le biais de la table de relation manga_has_article .linkOneMangaToOneArticle
+POST  http://localhost:3000/associate/article/manga/19/9782505000327 HTTP/1.1
+
+###
+
+// Récupéprer toutes les annonces en lien avec un user particulier .getArticlesByUser
+GET  http://localhost:3000/associate/user/6/article HTTP/1.1
+
+### 
+
+// Associer un article avec un user par le biais de la table de relation user_has_article .linkOneUserToOneArticle
+POST  http://localhost:3000/associate/user/article/2/19 HTTP/1.1

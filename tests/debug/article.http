@@ -1,0 +1,38 @@
+
+// Récupéprer toutes les annonces .getAllArticles
+GET  http://localhost:3000/article HTTP/1.1
+
+###
+// Ajouter une annonce .createOneArticle
+POST  http://localhost:3000/article HTTP/1.1
+Content-Type: application/json
+
+
+{
+  "title": "Vend Death Note tome 1 super propre",
+  "description": "jamais lu car j'aime pas la pochette",
+  "price": 5,
+  "image_url": "zefgzegfz",
+  "condition_id": 1
+}
+###
+// Obtenir les informations d'une annonce .getOneArticleById
+GET http://localhost:3000/article/34 HTTP/1.1
+
+###
+// Modifier une annonce .modifyOneArticleById
+PUT  http://localhost:3000/article/10 HTTP/1.1
+Content-Type: application/json
+
+
+{
+  "title": "Les aventures de Tintin au bled",
+  "description": "Tintin explore des thèmes d'amitié interculturelle, de respect de l'environnement et de justice sociale, tout en conservant l'esprit d'aventure qui caractérise les œuvres de Tintin.",
+  "price": 20333,
+  "image_url": "Hergé Katimasu",
+  "condition_id": 2
+}
+
+###
+// Supprimer une annonce .removeOneArticleById
+DELETE  http://localhost:3000/article/34 HTTP/1.1
