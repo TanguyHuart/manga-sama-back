@@ -53,7 +53,7 @@ const mangaController = {
             year_publication: mangaInfo.year_publication,
             author: mangaInfo.author,
             description: mangaInfo.description,
-            cover_url: `https://manga-samas.onrender.com/images/${mangaInfo.code_isbn}`,
+            cover_url: `https://manga-sama-back-production.up.railway.app/images/${mangaInfo.code_isbn}`,
             category_id: mangaInfo.category_id
           });
 
